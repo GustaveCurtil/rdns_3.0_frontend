@@ -1,0 +1,18 @@
+/*
+█▀▀ █▀▄ █▀▀ █▀█ ▀█▀ █▀▀   █▀█ █▀█ █▀▀ █▀▀ █▀▀
+█   █▀▄ █▀▀ █▀█  █  █▀▀   █▀▀ █▀█ █ █ █▀▀ ▀▀█
+▀▀▀ ▀ ▀ ▀▀▀ ▀ ▀  ▀  ▀▀▀   ▀   ▀ ▀ ▀▀▀ ▀▀▀ ▀▀▀ */
+
+body:has(form.create) header { grid-template-columns: 1fr auto;}
+
+form.create { 
+    flex-grow: 1;
+    display: flex; flex-direction: column;
+}
+form.create>div { flex-grow: 1; overflow-y: auto;}
+form.create>button {
+    height: var(--height-nav); width: 100%;
+    display: flex; justify-content: center; align-items: center;
+    border: 0; border-top: 1px solid hsl(var(--hsl-text)); background-color: hsl(var(--hsl-nav));
+    font-size: 1.2rem; font-weight: 500; text-decoration: underline solid; color: hsl(var(--hsl-link));
+}
